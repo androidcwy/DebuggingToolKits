@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="c_ff0000">#FF0000</color>
+    <color name="c_00ff00">#00FF00</color>
+    <color name="c_0000ff">#0000FF</color>
+    <color name="c_ffff00">#FFFF00</color>
+
+    <array name="account_face_pupil_liveness_group">
+        <item>@color/c_ff0000</item>
+        <item>@color/c_00ff00</item>
+        <item>@color/c_0000ff</item>
+        <item>@color/c_ffff00</item>
+    </array>
+</resources>

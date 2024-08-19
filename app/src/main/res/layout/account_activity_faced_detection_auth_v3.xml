@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.text.TextUtils"/>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.debuggingtoolkits.page.FaceDetectionAuthV3ViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@{viewModel.detectionBgColor}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_count_down_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:text="@{viewModel.faceDetectorDynamicText}"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:textSize="80sp"
+            android:visibility="gone"
+            android:text="@{String.valueOf(viewModel.countDownTimerTime / 1000L)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_count_down_tips"
+            tools:text="3" />
+
+        <com.example.scantools.widget.RoundPreviewView
+            android:id="@+id/camera_preview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="@{viewModel.startFaceDetector ? View.VISIBLE : View.GONE}"
+            app:startFaceDetection="@{viewModel.startFaceDetector}"
+            app:faceLivenessProcessListener="@{viewModel.faceLivenessProcessListener}"
+            app:faceListener="@{viewModel.faceDetectListener}"
+            app:previewController="@{viewModel.previewController}"
+            app:title="@{viewModel.faceDetectorDynamicSimpleText}"
+            android:layout_marginTop="32dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="247dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_back"
+            app:layout_constraintWidth_max="247dp"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintWidth_percent="0.6"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#61000000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/camera_preview"
+            app:layout_constraintStart_toStartOf="@id/camera_preview"
+            app:layout_constraintTop_toTopOf="@id/camera_preview" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:clickListener="@{viewModel.backClick}"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

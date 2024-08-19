@@ -1,0 +1,61 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.kapt)
+}
+
+android {
+    namespace 'com.example.facedetection'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 24
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.databinding.common
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    // scan
+    api "com.github.jenly1314.MLKit:mlkit-common:2.0.0"
+    api "com.github.jenly1314.MLKit:mlkit-face-detection:2.0.0"
+    api "com.github.jenly1314.MLKit:mlkit-barcode-scanning:2.0.0"
+
+    // camera
+    def camerax_version = "1.2.2"
+    api "androidx.camera:camera-core:${camerax_version}"
+    api "androidx.camera:camera-camera2:${camerax_version}"
+    api "androidx.camera:camera-lifecycle:${camerax_version}"
+    api "androidx.camera:camera-video:${camerax_version}"
+
+    api "androidx.camera:camera-view:${camerax_version}"
+    api "androidx.camera:camera-extensions:${camerax_version}"
+}

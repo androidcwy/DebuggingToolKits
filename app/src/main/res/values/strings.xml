@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">DebuggingToolKits</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+    <string name="account_face_auth_str1">请确保光线充足，本人正对手机摄像头</string>
+    <string name="account_face_auth_str2">本次人脸识别仅用于身份验证</string>
+    <string name="account_face_auth_str3">开始拍摄</string>
+    <string name="account_face_auth_str4">人脸核验</string>
+    <string name="account_face_auth_str5">张嘴</string>
+    <string name="account_face_auth_str6">对正</string>
+    <string name="account_face_auth_str7">提示</string>
+    <string name="account_face_auth_str8">%s! 剩余</string>
+    <string name="account_face_auth_str9">次机会</string>
+    <string name="account_face_auth_str10">重新开始</string>
+    <string name="account_face_auth_str11">屏幕即将闪烁，请保持姿势不动</string>
+    <string name="account_face_auth_str12">长时间无法检测到人脸</string>
+    <string name="account_face_auth_str13">人脸核验不通过</string>
+    <string name="account_face_auth_str14">您当前的人脸信息丢失，请联系网点寻求帮助</string>
+    <string name="account_face_auth_str15">系统异常，请联系网点</string>
+    <string name="account_face_auth_str16">活体检测失败</string>
+    <string name="account_face_auth_str17">人脸模糊无法辨别</string>
+    <string name="account_face_auth_str18">未知异常，请联系网点反馈</string>
+    <string name="account_face_auth_str19">立即返回</string>
+    <string name="account_face_auth_str20">!人脸核验%s次不通过!</string>
+    <string name="account_face_auth_str21">S后将返回登录页</string>
+
+    <string name="account_login_face_detection_str1">系统将在倒数结束后进行人脸核验\n请确认当前环境光线充足、五官无遮挡</string>
+    <string name="account_login_face_detection_str2">请将本人人脸正面完全置于识别框</string>
+    <string name="account_login_face_detection_str3">请张一张嘴</string>
+    <string name="account_login_face_detection_str4">缓慢进行左或右摇头</string>
+    <string name="account_login_face_detection_str5">笑一笑</string>
+
+    <string name="account_login_face_detection_str6">未识别到人脸，请重新拍摄</string>
+    <string name="account_login_face_detection_str7">请保持一个人脸在摄像头内</string>
+    <string name="account_login_face_detection_str8">请将人脸对准采集框</string>
+    <string name="account_login_face_detection_str9">重试次数过于频繁</string>
+    <string name="account_login_face_detection_str10">人脸匹配不成功</string>
+
+    <string name="account_face_auth_str23">摇头</string>
+</resources>
